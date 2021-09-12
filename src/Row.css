@@ -1,0 +1,35 @@
+.row {
+  margin-left: 20px;
+}
+.rowMovies {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.rowMovies::-webkit-scrollbar {
+  display: none;
+}
+
+.moviePoster {
+  /* object fit maintains aspect ratio */
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin: 5px;
+  transition: transform 500ms;
+}
+
+.moviePoster:hover {
+  transform: scale(1.08);
+}
+
+.largePoster {
+  max-height: 250px;
+  transition: transform 500ms;
+}
+
+.largePoster:hover {
+  transform: scale(1.09);
+}
